@@ -9,7 +9,7 @@ Answering the age old question... `What percentile is my salary as compared to o
 
 ## Usage
 ```
-python main.py --occupation "Software Engineer" --state "Oklahoma"
+python medium_wage.py --occupation "Software Engineer" --state "Oklahoma"
 ```
 
 --state should be full proper name
