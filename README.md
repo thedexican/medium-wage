@@ -12,13 +12,18 @@ Answering the age old question... `Where does my salary fall as compared to othe
 
 1. Download or Update a current XLS data set from https://www.bls.gov/oes/tables.htm 
 2. Extract XLS file to ./data directory as `data.xlsx`
+3. Install dependencies `pip install -r requirements.txt `
 
 ## Usage
 ```
-python medium_wage.py --occupation "Software Engineer" --state "Oklahoma"
+python medium_wage.py --occupation "Software Engineer" --state "Oklahoma" --salary 145000
 ```
 
 --state should be full proper name
+
 --occupation should be your best attempt at a standardized title
---sheet can be injected or will use value from embedded data file
+
+--salary should be integer (without commas)
+
+--sheet (optional) can be injected or will use value from embedded data file
 
