@@ -1,10 +1,10 @@
 # Medium Wage
 
-Answering the age old question... `What percentile is my salary as compared to others in my area?`
+Answering the age old question... `Where does my salary fall as compared to others in my area?`
 
 ## Requirements
 
-* Python 3.12.2
+* Python 3.12
 
 ## Setup
 

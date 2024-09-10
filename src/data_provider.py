@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 
 
-def annual_percentiles_for_soc(soc_id, state, sheet=0):
+def annual_percentiles_for_soc(soc_id, state, sheet):
     data_path = Path(__file__).parent / "../data/data.xlsx"
     df = pd.read_excel(data_path, sheet_name=sheet)
     # Filter df based on OCC_CODE And AREA_TITLE
@@ -20,4 +20,4 @@ def annual_percentiles_for_soc(soc_id, state, sheet=0):
             row["A_PCT75"].values[0],
             row["A_PCT90"].values[0],
         ]
-        return percentiles
+        return [int(item) for item in percentiles]
